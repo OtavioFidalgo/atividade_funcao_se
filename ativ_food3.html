@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 3 aula 2</title>
+</head>
+<body>
+    <h1>Fast Food</h1>
+    <p>Nome do Cliente: <span id="nome"></span></p>
+    <h2>Menu</h2>
+    <p>Big Super Sanduba: <span id="big"></span></p>
+    <p>Quase Super Sanduba : <span id="quase"></span></p>
+    <p>Mirrados Sanduba: <span id="mirrados"></span></p>
+    <p>Total: <span id="total"></span></p>
+
+    <script>
+        let = nome;
+        let big;
+        let quase;
+        let mirrados;
+        let total;
+
+        nome = prompt("Digite seu Nome.");
+        big = Number(prompt("Digite a quantidade de Bigs super sanduba que deseja."));
+        quase = Number(prompt("Digite a quantidade de Quase super sanduba que deseja."));
+        mirrados = Number(prompt("Digite a quantidade de Mirrados sanduba que deseja."));
+
+        total =((big * 5) + (quase * 3) + (mirrados * 1.50))
+
+        document.getElementById('nome').innerHTML = nome;
+        document.getElementById('big').innerHTML = big;
+        document.getElementById('quase').innerHTML = quase;
+        document.getElementById('mirrados').innerHTML = mirrados;
+        document.getElementById('total').innerHTML = total;
+
+    </script>
+    
+</body>
+</html>

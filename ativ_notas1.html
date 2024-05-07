@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média do Aluno</h1>
+    <p>Nome: <span id="nomealuno"></span></p>
+    <p>Nota 1: <span id="nota1"></span></p>
+    <p>Nota 2: <span id="nota2"></span></p>
+    <p>Nota 3: <span id="nota3"></span></p>
+    <p>Média do Aluno(a): <span id="media"></span></p>
+    <p>Aprovado: <span id="aprovaraluno"></span></p>
+    <p>Nota Maior: <span id="maior"></span></p>
+    <p>Nota do Meio: <span id="meio"></span></p>
+    <p>Nota Menor: <span id="menor"></span></p>
+
+
+    <script>
+        let nome;
+        let nota1;
+        let nota2;
+        let nota3;
+        let media;
+        let resultado;
+        let maior;
+        let meio;
+        let menor;
+
+        nome = prompt("Digite seu nome");
+        nota1 = Number (prompt("Digite sua primeira nota"));
+        nota2 = Number (prompt("Digite sua segunda nota"));
+        nota3 = Number (prompt("Digite sua terceira nota"));
+        
+        media = (nota1 + nota2 + nota3)/3;
+
+        resultado = media;
+
+        if(resultado >= 6){
+            resultado = "Sim";
+        }else{
+            resultado = "Não";
+        }
+
+        if (nota1 > nota2 && nota1 > nota3)
+            maior = nota1;
+            if (nota2 > nota3){
+                meio = nota2;
+                menor = nota3}
+            else{
+                meio = nota3;
+                menor = nota2
+            }
+        if (nota2 > nota1 && nota2 > nota3)
+            maior = nota2;
+            if (nota1 > nota3){
+                meio = nota1;
+                menor = nota3}
+            else{
+                meio = nota3;
+                menor = nota1
+            }
+        if (nota3 > nota1 && nota3 > nota2)
+            maior = nota3;
+            if (nota1 > nota2){
+                meio = nota1;
+                menor = nota2}
+            else{
+                meio = nota2;
+                menor = nota1
+            }
+        
+
+        
+
+        document.getElementById('nomealuno').innerHTML = nome;
+        document.getElementById('nota1').innerHTML = nota1;
+        document.getElementById('nota2').innerHTML = nota2;
+        document.getElementById('nota3').innerHTML = nota3;
+        document.getElementById('media').innerHTML = media;
+        document.getElementById('aprovaraluno').innerHTML = resultado;
+        document.getElementById('maior').innerHTML = maior;
+        document.getElementById('meio').innerHTML = meio;
+        document.getElementById('menor').innerHTML = menor;
+
+    </script>
+    
+</body>
+</html>

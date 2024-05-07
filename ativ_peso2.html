@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mais Pesado</h1>
+    <p>Nome da Pessoa 1: <span id="pessoa1"></span></p>
+    <p>Peso da Pessoa 1: <span id="peso1"></span></p>
+    <p>Nome da Pessoa 2: <span id="pessoa2"></span></p>
+    <p>Peso da Pessoa 2: <span id="peso2"></span></p>
+    <p>Nome da Pessoa 3: <span id="pessoa3"></span></p>
+    <p>Peso da Pessoa 3: <span id="peso3"></span></p>
+    <p>Quem é mais pesado? <span id="mais"></span></p>
+    <p>Maior Peso: <span id="maior"></span></p>
+    <p>Peso Intermediario: <span id="meio"></span></p>
+    <p>Menor Peso: <span id="menor"></span></p>
+
+    <script>
+        let pessoa1;
+        let peso1;
+        let pessoa2;
+        let peso2;
+        let pessoa3;
+        let peso3;
+        let mais;
+        let maior;
+        let meio;
+        let menor;
+
+        pessoa1 = prompt("Digite o nome da primeira pessoa.");
+        peso1 = Number (prompt("Digite o peso da primeira pessoa."));
+        pessoa2 = prompt("Digite o nome da segunda pessoa.");
+        peso2 = Number (prompt("Digite o peso da primeira pessoa."));
+        pessoa3 = prompt("Digite o nome da terceira pessoa.");
+        peso3 = Number (prompt("Digite o peso da terceira pessoa."));
+
+        if (peso1 >= peso2, peso3){
+            mais = pessoa1}
+        if (peso2 >= peso1, peso3){
+            mais = pessoa2}
+        if (peso3 >= peso1, peso2){
+            mais >= pessoa3}
+
+        
+        if (peso1 > peso2 && peso1 > peso3)
+            maior = peso1;
+            if (peso2 > peso3){
+                meio = peso2;
+                menor = peso3}
+            else{
+                meio = peso3;
+                menor = peso2
+            }
+        if (peso2 > peso1 && peso2 > peso3)
+            maior = peso2;
+            if (peso1 > peso3){
+                meio = peso1;
+                menor = peso3}
+            else{
+                meio = peso3;
+                menor = peso1
+            }
+        if (peso3 > peso1 && peso3 > peso2)
+            maior = peso3;
+            if (peso1 > peso2){
+                meio = peso1;
+                menor = peso2}
+            else{
+                meio = peso2;
+                menor = peso1
+            }
+
+        document.getElementById('pessoa1').innerHTML = pessoa1;
+        document.getElementById('peso1').innerHTML = peso1;
+        document.getElementById('pessoa2').innerHTML = pessoa2;
+        document.getElementById('peso2').innerHTML = peso2;
+        document.getElementById('pessoa3').innerHTML = pessoa3;
+        document.getElementById('peso3').innerHTML = peso3;
+        document.getElementById('mais').innerHTML = mais;
+        document.getElementById('maior').innerHTML = maior;
+        document.getElementById('meio').innerHTML = meio;
+        document.getElementById('menor').innerHTML = menor;
+
+
+    </script>
+    
+</body>
+</html>
